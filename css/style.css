@@ -19,6 +19,7 @@ html{
 }
 body{
     width: 100%;
+    max-width: 1440px;
     min-height: 100vh;
     background-color: var(--bg-main-color);
     display: flex;
@@ -61,6 +62,7 @@ ul{
 }
 .card{
     width: 80%;
+    
     display: flex;
     flex-direction: column;
    
@@ -144,14 +146,14 @@ ul{
         height: 100%;
     }
     .show-img{
-        width: 50%;
+        width: 45%;
         min-height: 100%;
         flex: 3;
         order: 1;
     
     }
     .content{
-        width: 40%;
+        width: 50%;
         flex: 4;
 
         text-align: left;
@@ -172,5 +174,10 @@ ul{
     }
     img[alt="desktop-img"]{
         display: block;
+    }
+}
+@media(min-width:800px){
+    html{
+        font-size: calc(62.5% + 6px);
     }
 }
